@@ -13,20 +13,12 @@ public class Robot extends TimedRobot {
 
     @Override
     public void teleopInit() {
-        // The default command is automatically scheduled in RobotContainer
     }
 
     @Override
     public void teleopPeriodic() {
-        CommandScheduler.getInstance().run(); // Run the command scheduler
+        CommandScheduler.getInstance().run(); 
     }
 
-    @Override
-    public void autonomousInit() {
-        // Start the autonomous command if needed
-        // Command autonomousCommand = robotContainer.getAutonomousCommand();
-        // if (autonomousCommand != null) {
-        //     autonomousCommand.schedule();
-        // }
-    }
+
 }
